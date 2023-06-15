@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #27447e;
+    --second-color: #61a540;
+    --background-blue: #b9d1e6;
+    --background-green: #daeed1;
+    --soft-green: #abcf99;
+    --soft-blue: #73a7d1;
+    --semisoft-blue: #446a9e;
+}
+
+.mycard {
+    box-shadow: -8px -8px 45px rgba(0, 0, 0, 0.2),
+        8px 8px 45px rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+
+
+.unique {
+    color: transparent;
+    background: linear-gradient(
+        to right, var(--primary-color), var(--second-color)
+    );
+    -webkit-background-clip: text;
+}
+
+.unique-char {
+    color: var(--second-color);
+}
+
+.card-info {
+    box-shadow: -8px -8px 45px rgba(0, 0, 0, 0.1),
+        8px 8px 45px rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+
+* {
+    font-family: "Jost", sans-serif;
+}
+
+option {
+    background-color: #000;
+}
+
+.unique-tag{
+    color: var(--semisoft-blue);
+}

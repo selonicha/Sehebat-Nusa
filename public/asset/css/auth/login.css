@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #27447e;
+    --second-color: #61a540;
+    --background-blue: #b9d1e6;
+    --background-green: #daeed1;
+    --soft-green: #abcf99;
+    --soft-blue: #73a7d1;
+    --semisoft-blue: #446a9e;
+}
+
+.login-{
+    background-color: var(--soft-blue);
+    height: 100%;
+    border-radius: 0px 80px 80px 0px;
+    
+   
+
+}
