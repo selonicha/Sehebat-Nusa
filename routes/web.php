@@ -77,7 +77,7 @@ Route::controller(ArtikelAdminController::class)->group(function () {
 
 // login
 Route::controller(LoginAdminController::class)->group(function () {
-    Route::post('admin/authLogin', 'login');
+    Route::post('authLogin', 'login');
 });
 
 Route::controller(KeunggulanAdminController::class)->group(function () {

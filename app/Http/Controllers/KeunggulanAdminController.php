@@ -16,15 +16,28 @@ class KeunggulanAdminController extends Controller
     {
         $client = new Client();
         $token = session('token');
+        $judul = $request->input('judul');
+        $deskripsi = $request->input('deskripsi');
+        $file = $request->file('file')->store('keunggulan');
 
         $response = $client->post('https://api-sehebatnusa.smdev-staging.web.id/api/tambahKeunggulan', [
             'headers' => [
                 'Authorrization' => 'Bearer' .$token,
             ],
             'multipart' => [
-                'judul'=> $request->input('judul'),
-                'deskripsi'=> $request->input('deskripsi'),
-                 $gambar = 'gambar'=> $request->file('file'),
+                [
+                    'name'=> 'judul',
+                    'contents' =>  $judul,
+                ],
+                [
+                    'name'=> 'deskripsi',
+                    'contents' =>  $deskripsi,
+                ],
+                [
+                     'name' => 'gambar',
+                     'contents' => fopen($file->getPathname(), 'r'),
+                     'filename' => $file->getClientOriginalName(),
+                ]
             ],
         ]);
         $statusCode = $response->getStatusCode();

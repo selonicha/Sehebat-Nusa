@@ -1,10 +1,10 @@
 @extends('component.user.navbar')
 
 @section('content')
-<div class="landing-page m-5 p-4" style="padding-top:80px !important">
+<div class="landing-page m-1 p-1" style="padding-top:130px !important">
     <div class="d-flex justify-content-center align-items-center fw-normal pb-2" style="font-size:2em">Keranjang Qurban</div>
     <div class="mycard">
-        <div class="row" style="padding-left:40px;padding-right:40px;padding-top:10px;">
+        <div class="row " style="padding-left:40px;padding-right:40px;padding-top:10px;">
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead class="table-primary">
@@ -66,7 +66,7 @@
     <div class="row" style="padding:30px">
         <div class="col justify-content-start d-flex">
             <div class="col-sm-3 p-2 justify-content-center d-flex " style="background-color:var(--primary-color);border-radius:5px">
-                <a href="" class=" text-decoration-none">
+                <a href="/produk-qurban" class=" text-decoration-none">
                     <div class="col text-white ">lanjut qurban </div>
                 </a>
             </div>
@@ -79,5 +79,8 @@
             </div>
         </div>
     </div>
-    @include('component.user.footer')
-    @endsection
+</div>
+@include('component.user.footer')
+
+@endsection
+@include('user.deleteCart')

@@ -1,4 +1,4 @@
-<div class="testimoni row">
+<div class="testimoni row p-4">
     <div class="col-12 justify-content-center d-flex align-items-center fw-semibold" style="font-size:1.5em;margin-top:30px">
         Testimoni Pelanggan
     </div>

@@ -6,6 +6,7 @@
     --soft-green: #abcf99;
     --soft-blue: #73a7d1;
     --semisoft-blue: #446a9e;
+    --white-color:#ffffff;
 }
 
 .mycard {
@@ -15,18 +16,22 @@
     background-color: #ffffff;
 }
 
-
-
 .unique {
     color: transparent;
     background: linear-gradient(
-        to right, var(--primary-color), var(--second-color)
+        to right,
+        var(--primary-color),
+        var(--second-color)
     );
     -webkit-background-clip: text;
 }
 
 .unique-char {
     color: var(--second-color);
+}
+
+.unique-blue {
+    color: var(--primary-color);
 }
 
 .card-info {
@@ -43,6 +48,24 @@ option {
     background-color: #000;
 }
 
-.unique-tag{
+.unique-tag {
     color: var(--semisoft-blue);
+}
+
+nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.unggul {
+    padding: 30px 0px 30px 0px;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+ul li a:hover,
+ul li a.nav-link:hover {
+    color: var(--primary-color);
+    font-size: 1em;
 }

@@ -28,7 +28,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label">File</label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input class="form-control" name="file" type="file" id="formFile">
                     </div>
                     <div class="submit d-flex justify-content-center align-items-center">
                         <button class="fw-bold text-white btn" role="button" style="background-color:var(--second-color); width:100%">tambahkan</button>
